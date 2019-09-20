@@ -89,7 +89,7 @@ def won?
     if @board[position1] == "X" && @board[position2] == "X" && @board[position3] =="X" || if @board[position1] == "O" && @board[position2] == "O" && @board[position3] =="O"  
       won = combo
     else
-      false
+      won = false
     end
     
     won
