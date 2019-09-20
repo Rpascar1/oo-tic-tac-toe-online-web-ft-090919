@@ -113,8 +113,9 @@ end
      end
     end
         
-  def over        
-        
+  def over
+    full? || draw?
+  end
         
 end
 
