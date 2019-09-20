@@ -140,7 +140,7 @@ def play
   puts @board[input]
   3.times{over?}
 end
-  3.times{play1}
+  play1
 
 end
   
