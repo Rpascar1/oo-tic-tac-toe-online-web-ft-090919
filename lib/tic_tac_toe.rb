@@ -93,7 +93,7 @@ def won?
      if @board[position1] == "O" && @board[position2] == "O" && @board[position3] =="O" 
        won = combo
        break
-    else
+    elsif
       won = false
     end
 end
