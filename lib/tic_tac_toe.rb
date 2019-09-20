@@ -137,6 +137,7 @@ def play
   input -=1
   puts @board[input]
   3.times{over?}
+  turn
 end
   
 
