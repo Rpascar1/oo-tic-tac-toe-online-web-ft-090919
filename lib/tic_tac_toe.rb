@@ -107,7 +107,13 @@ def full?
   end
 end
          
- 
+    def draw?
+        
+      if full? && won? == nil
+            false
+       end
+      end
+        
         
         
         
