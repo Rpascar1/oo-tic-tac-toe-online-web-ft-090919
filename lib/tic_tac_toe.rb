@@ -40,7 +40,7 @@ WIN_COMBINATIONS =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,
   
   def valid_move?(position)
       pos = position_taken?(position)
-      if pos && (position >= 0 && position <= 8)
+      if !pos && (position >= 0 && position <= 8)
       true
     else
       false
