@@ -134,7 +134,7 @@ def play
   until over?
   turn
   winner
-  puts "Congratulations X!"
+  puts "Congratulations ${winner}!"
 end
 end
   
