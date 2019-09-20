@@ -109,9 +109,8 @@ end
          
     def draw?
         
-      if full? && won? == nil
-       end
-      false
+      if full? && !won?
+     end
       end
         
         
