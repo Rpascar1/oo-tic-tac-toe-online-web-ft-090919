@@ -110,8 +110,8 @@ end
     def draw?
         
       if full? && won? == nil
-            false
        end
+      false
       end
         
         
