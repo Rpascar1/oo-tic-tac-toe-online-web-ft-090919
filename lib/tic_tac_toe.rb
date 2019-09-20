@@ -131,13 +131,16 @@ WIN_COMBINATIONS =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,
  end       
 
 def play
-  puts "Want to play a game..........#JIGSAW -  Tye 1-9"
+  
+  def play1 
+    puts "Want to play a game..........#JIGSAW -  Tye 1-9"
   input = gets
   input = input.to_i
   input -=1
   puts @board[input]
   3.times{over?}
-  turn
+end
+  3.times{play1}
 
 end
   
