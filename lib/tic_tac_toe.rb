@@ -135,7 +135,7 @@ def play
   input = gets
   input = input.to_i
   input -=1
-  @board[input]
+  puts @board[input]
   over?
 end
   
