@@ -6,10 +6,10 @@ class TicTacToe
 WIN_COMBINATIONS =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,2]]
     
     @@player = nil
-
+    @combo[nil]
   def initialize
-    @@board = [" "," "," "," "," "," "," "," "," "]
-    board = @@board
+    @board = [" "," "," "," "," "," "," "," "," "]
+    board = @board
   end  
 
   def display_board
@@ -91,15 +91,15 @@ WIN_COMBINATIONS =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,
     
       WIN_COMBINATIONS.each do |combo|
 
-        position1 = combo[0]
-        position2 = combo[1]
-        position3 = combo[2]
+        position1 = @combo[0]
+        position2 = @combo[1]
+        position3 = @combo[2]
       
-           if @board[position1] == "X" && @board[position2] == "X" && @@board[position3] =="X" 
+           if @board[position1] == "X" && @board[position2] == "X" && @board[position3] =="X" 
            won = combo
            won
            elsif
-           @board[position1] == "O" && @board[position2] == "O" && @@board[position3] =="O" 
+           @board[position1] == "O" && @board[position2] == "O" && @board[position3] =="O" 
            won = combo
            won
            else
@@ -122,7 +122,6 @@ WIN_COMBINATIONS =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,
 
   def winner
     if won?
-      @@board[position3]
     end
    end
 
