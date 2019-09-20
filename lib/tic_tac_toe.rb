@@ -136,6 +136,7 @@ def play
   input = input.to_i
   input -=1
   @board[input]
+  
 end
   
 
