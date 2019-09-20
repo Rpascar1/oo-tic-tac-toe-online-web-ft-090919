@@ -88,9 +88,11 @@ def won?
       
     if @board[position1] == "X" && @board[position2] == "X" && @board[position3] =="X" 
       won = combo
+      break
     elsif
      if @board[position1] == "O" && @board[position2] == "O" && @board[position3] =="O" 
        won = combo
+       break
     else
       won = false
     end
