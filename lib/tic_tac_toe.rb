@@ -134,7 +134,7 @@ def play
   puts "Want to see the play? Tye 1-9"
   input = gets
   input = input -=1
-  @baord[input]
+  @board[input]
 end
   
 
