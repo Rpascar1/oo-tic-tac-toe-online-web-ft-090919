@@ -93,8 +93,7 @@ def won?
        won = combo
     else
       false
-    end
-    
+    en
     won
   end
       
