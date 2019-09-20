@@ -138,20 +138,7 @@ def play
   puts @board[input]
   3.times{over?}
   turn
-    puts "Want to play a game..........#JIGSAW -  Tye 1-9"
-  input = gets
-  input = input.to_i
-  input -=1
-  puts @board[input]
-  3.times{over?}
-  turn
-    puts "Want to play a game..........#JIGSAW -  Tye 1-9"
-  input = gets
-  input = input.to_i
-  input -=1
-  puts @board[input]
-  3.times{over?}
-  turn
+
 end
   
 
