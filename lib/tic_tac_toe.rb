@@ -136,7 +136,7 @@ def play
   input = input.to_i
   input -=1
   puts @board[input]
-  over?
+  over?.times(3)
 end
   
 
