@@ -100,13 +100,15 @@ WIN_COMBINATIONS =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,
            if turn_count == 9
              true
             else
-            false
+             false
             end
          end
          
          def draw?
-           if full && !won?
+           if won == combo
              false
+          elsif full == true && won == !combo
+             true
            end
          end
         
