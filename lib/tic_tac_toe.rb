@@ -86,10 +86,13 @@ def won?
       position2 = combo[1]
       position3 = combo[2]
       
-    if @board[position1] == "X" && @board[position2] == "X" && @board[position3] =="X" || if @board[position1] == "O" && @board[position2] == "O" && @board[position3] =="O"  
+    if @board[position1] == "X" && @board[position2] == "X" && @board[position3] =="X" 
       won = combo
+    elsif
+     if @board[position1] == "O" && @board[position2] == "O" && @board[position3] =="O" 
+       won = combo
     else
-      won = false
+      false
     end
     
     won
