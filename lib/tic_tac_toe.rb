@@ -39,7 +39,7 @@ WIN_COMBINATIONS =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,
   end
   
   def valid_move?(position)
-    if @board[position]==(" ") || position 
+    if @board[position]==(" ") || position < 0 && position > 9
       true
     else
       false
