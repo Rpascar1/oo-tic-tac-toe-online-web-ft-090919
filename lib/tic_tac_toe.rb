@@ -61,7 +61,7 @@ WIN_COMBINATIONS =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,
   end  
   
   def turn
-    input = gets
+    input = gets.strip
     move_down = input_to_index(input)
    if valid_move?(move_down)
       player = current_player
