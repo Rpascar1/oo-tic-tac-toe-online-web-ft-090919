@@ -107,20 +107,12 @@ def full?
   end
 end
          
-         def draw?
-        
-          full? && won? == nil
-            false
-           end
-         end
-        
+ 
         
         
         
 end
-end        
-end
-end
+
 
 
 
